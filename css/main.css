@@ -34,10 +34,17 @@ body {
     font-family: "PT Sans", sans-serif;
     text-decoration: none;
     color: white;
-    padding: 15px 10px;
+    padding: 15px 25px;
+}
+
+.navigation__link:hover {
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.2s;
 }
 
 .hero {
+    background-color: rgba(237, 228, 217, 1);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -61,7 +68,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .hero__item-button {
@@ -73,6 +80,12 @@ body {
     border: none;
     border-radius: 5px;
     padding: 5px;
+}
+
+.hero__item-button:hover {
+    background-color: white;
+    color: rgba(74, 144, 226, 1);
+    transition: all ease-in-out 0.2s;
 }
 
 .hero__item-info {
@@ -87,6 +100,193 @@ body {
 
 .hero__item-header {
     color: white;
+}
+
+.main-content {
+    background-color: rgba(237, 228, 217, 1);
+    padding: 100px 300px 150px;
+    display: grid;
+    grid-column-gap: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-content__left-col {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    grid-column: span 2;
+}
+
+.main-content__left-col-item {
+    font-family: "PT Sans", sans-serif;
+    position: relative;
+}
+
+.main-content__left-col-button {
+    color: white;
+    background-color: rgba(74, 144, 226, 1);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-content__left-col-button:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-content__left-image {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.main-content__left-info {
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 5px;
+    bottom: 0;
+    position: absolute;
+    color: black;
+
+}
+
+.pagination {
+    display: flex;
+    gap: 15px;
+}
+
+.pagination__item {
+    font-family: "PT Sans", sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.pagination > a:nth-child(2) > span {
+    background-color: black;
+    color: white;
+}
+
+.right-bar {
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.right-bar__blogger {
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bar__blogger-img {
+    border-radius: 5px;
+}
+
+.right-bar__blogger-name {
+    color: black;
+}
+
+.right-bar__blogger-aside {
+    color: #999999;
+}
+
+.right-bar__blogger-about {
+    color: #666666;
+}
+
+.dark-button {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: #232323;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dark-button:hover {
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+
+.popular-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.popular-post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.popular-post__img {
+    border-radius: 5px;
+}
+
+.popular-post__header {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.popular-post__aside {
+    color: #666666;
+}
+
+.top-left-absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.instagram__gallery {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.instagram__gallery > button {
+    grid-column: span 2;
+    justify-self: stretch;
+}
+
+.instagram-gallery__img {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+}
+
+.tag-item {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 5px;
 }
 
 .site-footer {
